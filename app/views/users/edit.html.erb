@@ -1,7 +1,6 @@
-</h1>Edit an user </>
-<% 
-=begin %>
- <form action="/users" method="post" accept-charset="UTF-8">
+<h1>Edit an existing user </h1>
+
+ <%# <form action="user_path" method="patch" accept-charset="UTF-8">
   <label for="username">Username:</label>
   <input type="text" id="username" name="user[username]"><br><br>
   <label for="email">Email:</label>
@@ -9,14 +8,13 @@
   <label for="password">Password:</label>
   <input type="password" id="password" name="user[password]"><br><br>
   <input type="submit" value="Submit">
-  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
-</form> 
-<% 
-=end %>
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>
+<%# </form>  %>
+
 
 <% 
 =begin %>
- <%= form_tag('/users', method: :post) do %> 
+ <%= form_tag('user_path', method: :patch) do %> 
    <%= label_tag(:username, "Username:") %> 
    <%= text_field_tag(:username) %> 
    <%= label_tag(:email, "Email:") %> 
@@ -25,8 +23,7 @@
    <%= password_field_tag(:password) %>    
    <%= submit_tag("Create") %> 
   <% end %>
-
-  <% 
+ <% 
 =end %>
   
 
