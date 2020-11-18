@@ -1,4 +1,4 @@
-</h1>Create a new user </>
+</h1>Edit an user </>
 <% 
 =begin %>
  <form action="/users" method="post" accept-charset="UTF-8">
@@ -14,7 +14,8 @@
 <% 
 =end %>
 
-
+<% 
+=begin %>
  <%= form_tag('/users', method: :post) do %> 
    <%= label_tag(:username, "Username:") %> 
    <%= text_field_tag(:username) %> 
@@ -25,15 +26,13 @@
    <%= submit_tag("Create") %> 
   <% end %>
 
-
+  <% 
+=end %>
   
-<% 
-=begin %>
-  <%= form_for (User.new) do |f| %>
-  Username: <%= f.text_field :username, placeholder: 'Juan' %><br />
-  Email : <%= f.email_field :email, placeholder: 'example@example.com' %><br />
+
+  <%= form_for @user do |f| %>
+  Username: <%= f.text_field :username %><br />
+  Email : <%= f.email_field :email%><br />
   Password : <%= f.password_field :password %><br />
   <%= f.submit %>
 <% end %>
- <% 
-=end %>
