@@ -1,6 +1,18 @@
 # Blog appp Ruby on Rails
 
-This repository contains the Ruby on rails form,  where you can create a username, with the email and password, and also you can edit it.
+This repository contains the Ruby on rails form, where you can create a username, with the email and password, and also you can edit it.
+This project contains the User model, views for the create and edit, and the user's controller.
+
+## 🔧 Getting Started
+
+> To get a local copy and running, follow these simple steps.
+
+- Go to the main page of the repo.
+- Press the "Code" button and get the repo link. (git@github.com:BrianSammit/Rails_form.git)
+- Clone it using git clone.
+
+To start the project, open your terminal and cd into your folder where you save it and start the server just typing "rails s" or "rails server".
+Open the browser and copy the following URL "http://localhost:3000/users/new" and paste it un the browser if you want to create a new user and if you want to edit the existing user copy this URL "http://localhost:3000/users/1/edit".
 
 ## Built With :
 
