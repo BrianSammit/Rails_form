@@ -1,4 +1,4 @@
-# Blog appp Ruby on Rails
+# Form Ruby on Rails
 
 This repository contains the Ruby on rails form, where you can create a username, with the email and password, and also you can edit it.
 This project contains the User model, views for the create and edit, and the user's controller.
